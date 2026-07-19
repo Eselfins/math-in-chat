@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mathinchat",
+  "version": "${mod_version}",
+  "name": "Math in chat",
+  "description": "Shows a gray ghost preview of the result while you type a math expression in chat. Nothing is ever sent or modified.",
+  "authors": [
+    "Eselfins"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.eselfins.mathinchat.MathInChatClient"
+    ]
+  },
+  "mixins": [
+    "mathinchat.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=26.1.2 <26.3",
+    "fabricloader": ">=0.19.3",
+    "java": ">=25"
+  }
+}
